@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicOne", "TopicOne\TopicOne.csproj", "{AFFFD3C0-B9A3-40ED-80C2-A352BAF2C63E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicOne.Iteration1", "TopicOne.Iteration1\TopicOne.Iteration1.csproj", "{75675C5B-5425-4834-B0A8-3913FA9E55F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Iteration1", "Iteration1", "{D6124DE8-E997-42D6-9C27-1204F1D07EA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFFFD3C0-B9A3-40ED-80C2-A352BAF2C63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFFD3C0-B9A3-40ED-80C2-A352BAF2C63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFFD3C0-B9A3-40ED-80C2-A352BAF2C63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFFD3C0-B9A3-40ED-80C2-A352BAF2C63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75675C5B-5425-4834-B0A8-3913FA9E55F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75675C5B-5425-4834-B0A8-3913FA9E55F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75675C5B-5425-4834-B0A8-3913FA9E55F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75675C5B-5425-4834-B0A8-3913FA9E55F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75675C5B-5425-4834-B0A8-3913FA9E55F5} = {D6124DE8-E997-42D6-9C27-1204F1D07EA5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0563D76-8862-445E-A198-406F3AA4DD8B}
+	EndGlobalSection
+EndGlobal
