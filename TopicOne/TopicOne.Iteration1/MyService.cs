@@ -36,10 +36,10 @@ namespace TopicOne.Iteration1
 
    // What are the code smells in this sample implementation?  
 
-   // 1. Lack of unit tests
-   // 2. Magic strings
-   // 3. string comparisons not 'best practiced'
-   // 3. Code isn't really self documenting
+   // 1. Magic strings
+   // 2. string comparisons not 'best practiced'
+   // 3. Lack of unit tests
+   // 4. Code isn't really self documenting
 
    // Refs:
    //  https://en.wikipedia.org/wiki/Code_smell
