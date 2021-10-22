@@ -1,28 +1,15 @@
 ﻿using System.Diagnostics;
 
-namespace TopicOne.Iteration1
+namespace TopicOne.Core.Iteration1
 {
-   public class MyModel
-   {
-      public string Id { get; set; }
-      public string SourceSystem { get; set; }
-      public string Name { get; set; }
-      public string Address { get; set; }
-   }
-
-   public interface IMyService
-   {
-      string DoWork(MyModel model);
-   }
-
-   public class MyFirstService : IMyService
+   public class MyService : IMyService
    {
       public string DoWork(MyModel model)
       {
          if (model.SourceSystem.ToLower() == "legacy-system" && model.Id != "0")
          {
             // ... lots of cool code and snazzy logic here ...
-            
+
             return $"Doing work for legacy system. Welcome {model.Name} @ {model.Address}";
          }
          else

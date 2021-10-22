@@ -1,4 +1,5 @@
 ﻿using System;
+using TopicOne.Core;
 
 namespace TopicOne
 {
@@ -17,18 +18,29 @@ namespace TopicOne
 
       private static void DemoIteration1()
       {
-         Iteration1.IMyService service = new Iteration1.MyFirstService();
-         var model = new Iteration1.MyModel
+         IMyService service = new Core.Iteration1.MyService();
+         var model = new MyModel
          {
             Id = "0",
-            SourceSystem = "New-System",
+            SourceSystem = string.Empty,
             Name = "Brent",
             Address = "123 Main St."
          };
-
          var work = service.DoWork(model);
 
-         Console.WriteLine($"Work complete: {work}");
+         // demo 'DoWork' w a 'legacy' system.
+         model.SourceSystem = "legacy-system";
+         work = service.DoWork(model);
+         Console.WriteLine($"Work complete:\r\n\r\n{work}\r\n\r\n");
+
+         // demo 'DoWork' w a 'new' system.
+         model.SourceSystem = "new-system";
+         work = service.DoWork(model);
+         Console.WriteLine($"Work complete:\r\n\r\n{work}\r\n\r\n");
+
+         // demo 'DoWork' w/o a source system.
+         model.SourceSystem = string.Empty;
+         Console.WriteLine($"Work complete:\r\n\r\n{work}\r\n\r\n");
       }
    }
 }
